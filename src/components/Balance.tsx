@@ -8,7 +8,7 @@ type Props = {
 const Balance: React.FC<Props> = ({ balance }) => {
    return (
       <Box className="balance">
-         <Image src="assets/img/balance-coin.png" boxSize={"30px"} mr={3} />
+         <Image src="../assets/img/balance-coin.png" boxSize={"30px"} mr={3} />
 
          {balance}
       </Box>
