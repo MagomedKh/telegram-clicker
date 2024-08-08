@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Image, keyframes } from "@chakra-ui/react";
+import fruitImg from "../assets/img/fruit.png";
 
 type Props = {
    onClick: () => void;
@@ -25,7 +26,7 @@ const Fruit: React.FC<Props> = ({ energy, onClick }) => {
    return (
       <Box as="div" userSelect="none" mb={"5vh"} className={"fruit"}>
          <Image
-            src="../assets/img/fruit.png"
+            src={fruitImg}
             onClick={handleClick}
             key={animationKey}
             transform={"scaleY(1.1)"}
