@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Japanese";
+  src: url("src/assets/font/Japanese 3017.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Qanelas";
+  src: url("src/assets/font/Qanelas.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/img/background.png") no-repeat 50% 82%;
+  background-color: rgb(34, 0, 27);
+  color: #fff;
+}
+
+.balance {
+  width: 88vw;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15% auto 0;
+  background: url("src/assets/img/balance-background.png") right no-repeat;
+  background-color: #66496d;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-family: Japanese, sans-serif;
+  font-size: 48px;
+  margin-bottom: 4vh;
+}
+
+.fruit {
+  position: relative;
+}
+
+.energyBar {
+  width: 30vw;
+  position: relative;
+  margin-left: 7.5vw;
+  margin-top: 6.5vh;
+  font-family: Qanelas, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.progress > div {
+  background: linear-gradient(to right bottom, #ff6e05, #f83c27); /* Градиентный фон */
+}
