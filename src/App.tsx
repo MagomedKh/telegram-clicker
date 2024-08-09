@@ -30,8 +30,8 @@ const App: React.FC = () => {
    }, []);
 
    useEffect(() => {
-      const sendUserData = (e: BeforeUnloadEvent) => {
-         // e.preventDefault();
+      const sendUserData = () => {
+         // e.preventDefault(); e: BeforeUnloadEvent
 
          http.post(`user_exit/${ID}`, null, {
             params: {
