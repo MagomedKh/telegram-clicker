@@ -42,6 +42,11 @@ body {
 
 .fruit {
   position: relative;
+
+  img {
+    height: 45.3vh;
+    object-fit: contain;
+  }
 }
 
 .energyBar {
