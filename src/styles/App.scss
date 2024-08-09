@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Japanese";
-  src: url("assets/font/Japanese 3017.ttf") format("truetype");
+  src: url("../assets/font/Japanese 3017.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Qanelas";
-  src: url("assets/font/Qanelas.ttf") format("truetype");
+  src: url("../assets/font/Qanelas.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +24,7 @@ body {
   color: #fff;
 }
 
-.balance {
+.coinsBlock {
   width: 88vw;
   height: 11vh;
   display: flex;

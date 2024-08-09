@@ -11,6 +11,10 @@ const useEnergy = (maxEnergy: number, rechargeRate: number) => {
       return () => clearInterval(interval);
    }, [maxEnergy, rechargeRate]);
 
+   useEffect(() => {
+      setEnergy(maxEnergy);
+   }, [maxEnergy]);
+
    return [energy, setEnergy] as const;
 };
 

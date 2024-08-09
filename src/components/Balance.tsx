@@ -1,17 +1,17 @@
 import React from "react";
 import { Box, Image } from "@chakra-ui/react";
-import balanceCoinImg from "../assets/img/balance-coin.png";
+import coinImg from "../assets/img/balance-coin.png";
 
 type Props = {
-   balance: number;
+   coins: number;
 };
 
-const Balance: React.FC<Props> = ({ balance }) => {
+const Balance: React.FC<Props> = ({ coins }) => {
    return (
-      <Box className="balance">
-         <Image src={balanceCoinImg} alt="Balance Coin" boxSize={"30px"} mr={3} />
+      <Box className="coinsBlock">
+         <Image src={coinImg} alt="Coins" boxSize={"30px"} mr={3} />
 
-         {balance}
+         {coins}
       </Box>
    );
 };
