@@ -6,7 +6,7 @@ type Props = {
    coins: number;
 };
 
-const Balance: React.FC<Props> = ({ coins }) => {
+const CoinsBlock: React.FC<Props> = ({ coins }) => {
    return (
       <Box className="coinsBlock">
          <Image src={coinImg} alt="Coins" boxSize={"30px"} mr={3} />
@@ -16,4 +16,4 @@ const Balance: React.FC<Props> = ({ coins }) => {
    );
 };
 
-export default Balance;
+export default CoinsBlock;
