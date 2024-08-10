@@ -6,10 +6,10 @@ import { SDKProvider } from "@telegram-apps/sdk-react";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
    <React.StrictMode>
-      <SDKProvider>
-         <ChakraProvider>
+      <ChakraProvider>
+         <SDKProvider debug>
             <App />
-         </ChakraProvider>
-      </SDKProvider>
+         </SDKProvider>
+      </ChakraProvider>
    </React.StrictMode>
 );

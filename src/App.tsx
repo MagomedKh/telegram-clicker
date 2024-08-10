@@ -6,11 +6,15 @@ import "./styles/App.scss";
 import CoinsBlock from "./components/CoinsBlock";
 import Highlight from "./components/Highlight";
 import useBalance from "./hooks/useBalance";
+import { useInitDataRaw } from "@telegram-apps/sdk-react";
 
 const MAX_ENERGY = 1000;
 
 const App: React.FC = () => {
-   const { coins, setCoins, energy, setEnergy } = useBalance(MAX_ENERGY);
+   const initData = useInitDataRaw();
+   const userId = initData?.result?.user?.id || 12345;
+
+   const { coins, setCoins, energy, setEnergy } = useBalance(userId, MAX_ENERGY);
 
    useEffect(() => {
       const interval = setInterval(() => {
