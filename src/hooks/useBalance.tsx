@@ -23,8 +23,6 @@ const useBalance = (userId: number, maxEnergy: number) => {
 
    useEffect(() => {
       const sendUserData = () => {
-         // e.preventDefault(); e: BeforeUnloadEvent
-
          http.post(`user_exit/${userId}`, null, {
             params: {
                coins,

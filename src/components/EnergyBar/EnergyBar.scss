@@ -1,0 +1,20 @@
+.energyBar {
+   width: 30vw;
+   position: relative;
+   margin-left: 7.5vw;
+   margin-top: 6.5vh;
+   font-family: Qanelas, sans-serif;
+   font-size: 12px;
+   text-align: center;
+}
+
+.progress {
+   background: rgb(34, 0, 27) !important;
+   border-radius: 38px;
+   min-height: 3.5vh;
+   margin-top: 1vh;
+
+   div {
+      background: linear-gradient(to right bottom, #ff6e05, #f83c27);
+   }
+}

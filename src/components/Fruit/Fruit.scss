@@ -1,0 +1,23 @@
+.fruit {
+   position: relative;
+
+   img {
+      height: 45.3vh;
+      object-fit: contain;
+      width: 72vw;
+      margin: auto;
+      transform: scaleY(1.1);
+   }
+}
+
+@keyframes clickAnimation {
+   0% {
+      transform: scaleX(1) scaleY(1.1);
+   }
+   30% {
+      transform: scaleX(0.95) scaleY(1.05);
+   }
+   100% {
+      transform: scaleX(1) scaleY(1.1);
+   }
+}

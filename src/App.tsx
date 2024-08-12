@@ -1,18 +1,19 @@
 import React, { useEffect } from "react";
-import Fruit from "./components/Fruit";
-import EnergyBar from "./components/EnergyBar";
+import Fruit from "./components/Fruit/Fruit";
+import EnergyBar from "./components/EnergyBar/EnergyBar";
 import { Box } from "@chakra-ui/react";
 import "./styles/App.scss";
-import CoinsBlock from "./components/CoinsBlock";
-import Highlight from "./components/Highlight";
+import CoinsBlock from "./components/CoinsBlock/CoinsBlock";
+import Highlight from "./components/Highlight/Highlight";
 import useBalance from "./hooks/useBalance";
 import { useInitDataRaw } from "@telegram-apps/sdk-react";
 
 const MAX_ENERGY = 1000;
+const DEFAULT_ID = 12345;
 
 const App: React.FC = () => {
    const initData = useInitDataRaw();
-   const userId = initData?.result?.user?.id || 12345;
+   const userId = initData?.result?.user?.id || DEFAULT_ID;
 
    const { coins, setCoins, energy, setEnergy } = useBalance(userId, MAX_ENERGY);
 
@@ -32,8 +33,8 @@ const App: React.FC = () => {
    };
 
    return (
-      <Box p={"0.1"} className="app">
-         <Box position={"relative"} zIndex={5}>
+      <Box className="app">
+         <Box className="contentWrapper">
             <CoinsBlock coins={coins} />
             <Fruit energy={energy} onClick={handleFruitClick} />
             <EnergyBar energy={energy} maxEnergy={MAX_ENERGY} />

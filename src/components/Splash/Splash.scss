@@ -1,0 +1,35 @@
+.splash {
+   position: absolute;
+   transform: translate(-10%, -75%);
+   pointer-events: none;
+   width: 37vw;
+   height: 20.5vh;
+   border-radius: 50%;
+   background: url("../../assets/img/splash-purple.png") 50% 50% no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: splashAnimation 0.7s ease-out;
+   visibility: hidden;
+   z-index: 10;
+
+   span {
+      font-family: Japanese, sans-serif;
+      font-size: 36px;
+      color: #fff;
+      position: relative;
+      right: 2vw;
+   }
+}
+
+@keyframes splashAnimation {
+   0% {
+      transform: translate(-10%, -75%) scale(1);
+      opacity: 1;
+      visibility: visible;
+   }
+   100% {
+      transform: translate(-10%, -75%) scale(1.45);
+      opacity: 0;
+   }
+}

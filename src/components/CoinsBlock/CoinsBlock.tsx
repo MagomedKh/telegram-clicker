@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Image } from "@chakra-ui/react";
-import coinImg from "../assets/img/balance-coin.png";
+import coinImg from "../../assets/img/balance-coin.png";
+import "./CoinsBlock.scss";
 
 type Props = {
    coins: number;

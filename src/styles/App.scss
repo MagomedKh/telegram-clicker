@@ -12,7 +12,8 @@
 }
 
 html,
-body {
+body,
+.app {
   overflow: hidden;
 }
 
@@ -24,41 +25,7 @@ body {
   color: #fff;
 }
 
-.coinsBlock {
-  width: 88vw;
-  height: 11vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15% auto 0;
-  background: url("../assets/img/balance-background.png") right no-repeat;
-  background-color: #66496d;
-  border: 1px solid #fff;
-  border-radius: 20px;
-  font-family: Japanese, sans-serif;
-  font-size: 48px;
-  margin-bottom: 4vh;
-}
-
-.fruit {
+.contentWrapper {
   position: relative;
-
-  img {
-    height: 45.3vh;
-    object-fit: contain;
-  }
-}
-
-.energyBar {
-  width: 30vw;
-  position: relative;
-  margin-left: 7.5vw;
-  margin-top: 6.5vh;
-  font-family: Qanelas, sans-serif;
-  font-size: 12px;
-  text-align: center;
-}
-
-.progress > div {
-  background: linear-gradient(to right bottom, #ff6e05, #f83c27); /* Градиентный фон */
+  z-index: 5;
 }

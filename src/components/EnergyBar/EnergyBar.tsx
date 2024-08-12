@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Progress, Text } from "@chakra-ui/react";
+import "./EnergyBar.scss";
 
 type Props = {
    energy: number;
@@ -12,17 +13,8 @@ const EnergyBar: React.FC<Props> = ({ energy, maxEnergy }) => {
    return (
       <Box className={"energyBar"}>
          <Text fontWeight={100}>Your Energy: {energyProcent}%</Text>
-         <Progress
-            value={Number(energyProcent)}
-            width={"30vw"}
-            size="lg"
-            colorScheme="black"
-            background="#22001B"
-            className={"progress"}
-            borderRadius={"38px"}
-            h={"3.5vh"}
-            mt={"1vh"}
-         />
+
+         <Progress value={Number(energyProcent)} className={"progress"} />
          <Text pos={"absolute"} top="58%" left="30%" right={"30%"}>
             {energy}
          </Text>
